@@ -39,3 +39,7 @@ def traditional_cuped(df, metric):
     model = sm.WLS(endog=y, exog=x, weights=w)
     results = model.fit()
     return results.pvalues["is_treated"]
+
+
+if __name__ == "__main__":
+    print('exp_eval.py is being run directly')
